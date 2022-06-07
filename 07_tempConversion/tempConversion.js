@@ -1,8 +1,11 @@
-const ftoc = function() {
+const ftoc = function(celsius) {
+  return Math.round(((5 / 9) * (celsius - 32)) * 10) / 10;
 
 };
 
-const ctof = function() {
+const ctof = function(fahrenheit) {
+
+  return Math.round(((fahrenheit * (9 / 5)) + 32) * 10) / 10;
 
 };
 
