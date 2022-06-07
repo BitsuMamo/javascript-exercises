@@ -1,6 +1,9 @@
 const repeatString = function(value, times) {
+  if (times < 0) {
+    return 'ERROR';
+  }
   let result = "";
-  while(times != 0){
+  while (times > 0) {
     result += value;
     times--;
   }
